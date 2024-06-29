@@ -6,7 +6,7 @@ def main():
     
     PONG = "+PONG\r\n"
     
-    server_socket = socket.create_server(("localhost", 9000), reuse_port=True)
+    server_socket = socket.create_server(("localhost", 6379), reuse_port=True)
     connection, addr = server_socket.accept()  # wait for client
     
     while connection:
